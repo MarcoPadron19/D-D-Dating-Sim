@@ -24,6 +24,9 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("isOpen", true);
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -40,6 +43,7 @@ public class DialogueManager : MonoBehaviour
     {
         if(sentences.Count == 0)
         {
+            //DisplayResponses();
             EndDialogue();
             return;
         }
@@ -63,5 +67,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("isOpen", false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

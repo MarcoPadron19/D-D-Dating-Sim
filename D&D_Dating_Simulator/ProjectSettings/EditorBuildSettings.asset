@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title_Screen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Lounge_Room.unity
+    guid: f48e239f2129542b6b2e77540637186f
+  - enabled: 1
+    path: Assets/Scenes/Beholder_Room.unity
+    guid: 3a9626f8920974b9b9c5fc599500008b
+  - enabled: 1
+    path: Assets/Scenes/Mindflayer_Room.unity
+    guid: e057001ab7f824d1b9944ced308c92db
+  - enabled: 1
+    path: Assets/Scenes/Succubus_Room.unity
+    guid: 48d686d23667d401cbebbe24c06767c6
+  - enabled: 1
+    path: Assets/Scenes/End_Screen.unity
+    guid: b1ac4197608be42e5af310832c807ce9
   m_configObjects: {}

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Paused
   - Status
+  - Continue
+  - Responses
   layers:
   - Default
   - TransparentFX
