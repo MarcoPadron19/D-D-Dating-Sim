@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
     public void LoveMeterIncrease()
     {
-        currentLove += 5;
+        currentLove += 1;
 
         loveMeter.SetLoveMeter(currentLove);
 

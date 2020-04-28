@@ -17,12 +17,15 @@ namespace PixelCrushers
 
         public override void ApplyData(string data)
         {
-            if(string.IsNullOrEmpty(data))
+            if (string.IsNullOrEmpty(data))
             {
                 return;
             }
             var Player = GetComponent<Player>();
             Player.currentLove = SafeConvert.ToInt(data);
+
+            var Love = FindObjectOfType<LoveMeter>();
+            Love.SetLoveMeter(SafeConvert.ToInt(data));
         }
 
         //public override void ApplyDataImmediate()
