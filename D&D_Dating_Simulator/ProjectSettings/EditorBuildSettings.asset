@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Succubus_Room.unity
     guid: 48d686d23667d401cbebbe24c06767c6
   - enabled: 1
-    path: Assets/Scenes/End_Screen.unity
+    path: Assets/Scenes/Succubus_Love_Interest.unity
     guid: b1ac4197608be42e5af310832c807ce9
+  - enabled: 1
+    path: Assets/Scenes/Beholder_Love_Interest.unity
+    guid: 2f5198aa9b2de4a739c4b7bbbd0bea03
+  - enabled: 1
+    path: Assets/Scenes/Mindflayer_Love_Interest.unity
+    guid: 78c7e7ccc832d413a9cb61da8635aa8d
   m_configObjects: {}
