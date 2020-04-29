@@ -752,7 +752,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945100628}
   m_HandleRect: {fileID: 1945100626}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1404,6 +1404,11 @@ MonoBehaviour:
   maxLoveMeter: 10
   currentLove: 0
   monster: {fileID: 0}
+  succubusMeh: {fileID: 0}
+  succubusHappy: {fileID: 0}
+  succubusNeutral: {fileID: 0}
+  succubusFlattered: {fileID: 0}
+  succubusAngry: {fileID: 0}
   loveMeter: {fileID: 2004915382}
 --- !u!114 &409006178
 MonoBehaviour:

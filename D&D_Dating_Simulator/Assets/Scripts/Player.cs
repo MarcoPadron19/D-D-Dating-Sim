@@ -9,6 +9,12 @@ public class Player : MonoBehaviour
     public int currentLove;
     public GameObject monster;
 
+    public Texture succubusMeh;
+    public Texture succubusHappy;
+    public Texture succubusNeutral;
+    public Texture succubusFlattered;
+    public Texture succubusAngry;
+
     public LoveMeter loveMeter;
 
     void Start()
@@ -32,7 +38,8 @@ public class Player : MonoBehaviour
     public void LoveMeterIncrease()
     {
         currentLove += 1;
-
+        
+        
         loveMeter.SetLoveMeter(currentLove);
 
         if (currentLove >= maxLoveMeter)
@@ -52,12 +59,19 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("Mindflayer_Love_Interest");
             }
         }
+        if (monster == GameObject.Find("Succubus"))
+        {
+            monster.GetComponent<Material>().mainTexture = succubusHappy;
+        }
     }
 
     public void LoveMeterDecrease()
     {
         currentLove -= 1;
-
+        if(monster == GameObject.Find("Succubus"))
+        {
+            monster.GetComponent<Material>().mainTexture = succubusMeh;
+        }
         loveMeter.SetLoveMeter(currentLove);
     }
 
