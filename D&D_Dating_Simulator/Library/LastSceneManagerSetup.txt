@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Succubus_Room.unity
+- path: Assets/Scenes/Beholder_Room.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
