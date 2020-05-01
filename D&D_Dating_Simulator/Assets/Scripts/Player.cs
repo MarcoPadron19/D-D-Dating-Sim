@@ -45,54 +45,14 @@ public class Player : MonoBehaviour
         
         loveMeter.SetLoveMeter(currentLove);
 
-        if (currentLove >= maxLoveMeter)
-        {
-            if(monster == GameObject.Find("Succubus"))
-            {
-                SceneManager.LoadScene("Succubus_Love_Interest");
-            }
-
-            if (monster == GameObject.Find("Beholder"))
-            {
-                SceneManager.LoadScene("Beholder_Love_Interest");
-            }
-
-            if (monster == GameObject.Find("Mindflayer"))
-            {
-                SceneManager.LoadScene("Mindflayer_Love_Interest");
-            }
-        }
-        if (monster == GameObject.Find("Succubus"))
-        {
-            monsterMaterial.mainTexture = Happy;
-        }
+        monsterMaterial.mainTexture = Happy;
+        
     }
     public void LoveMeterIncreaseTwo()
     {
         currentLove += 2;
-
-
-        loveMeter.SetLoveMeter(currentLove);
-
-        if (currentLove >= maxLoveMeter)
-        {
-            if (monster == GameObject.Find("Succubus"))
-            {
-                SceneManager.LoadScene("Succubus_Love_Interest");
-            }
-
-            if (monster == GameObject.Find("Beholder"))
-            {
-                SceneManager.LoadScene("Beholder_Love_Interest");
-            }
-
-            if (monster == GameObject.Find("Mindflayer"))
-            {
-                SceneManager.LoadScene("Mindflayer_Love_Interest");
-            }
-        }
         
-            monsterMaterial.mainTexture = Flattered;
+         monsterMaterial.mainTexture = Flattered;
         
     }
 
@@ -116,5 +76,26 @@ public class Player : MonoBehaviour
         monsterMaterial.mainTexture = Neutral;
 
         loveMeter.SetLoveMeter(currentLove);
+    }
+
+    public void LoveScreen()
+    {
+        if (currentLove >= 0)
+        {
+            if (monster == GameObject.Find("Succubus"))
+            {
+                SceneManager.LoadScene("Succubus_Love_Interest");
+            }
+
+            if (monster == GameObject.Find("Beholder"))
+            {
+                SceneManager.LoadScene("Beholder_Love_Interest");
+            }
+
+            if (monster == GameObject.Find("Mindflayer"))
+            {
+                SceneManager.LoadScene("Mindflayer_Love_Interest");
+            }
+        }
     }
 }
