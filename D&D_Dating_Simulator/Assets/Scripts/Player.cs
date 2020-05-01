@@ -9,16 +9,19 @@ public class Player : MonoBehaviour
     public int currentLove;
     public GameObject monster;
 
-    public Texture succubusMeh;
-    public Texture succubusHappy;
-    public Texture succubusNeutral;
-    public Texture succubusFlattered;
-    public Texture succubusAngry;
+
+    public Material monsterMaterial;
+    public Texture Meh;
+    public Texture Happy;
+    public Texture Neutral;
+    public Texture Flattered;
+    public Texture Angry;
 
     public LoveMeter loveMeter;
 
     void Start()
     {
+        monsterMaterial.mainTexture = Neutral;
         currentLove = 0;
         loveMeter.setMaxLoveMeter(maxLoveMeter);
     }
@@ -61,7 +64,7 @@ public class Player : MonoBehaviour
         }
         if (monster == GameObject.Find("Succubus"))
         {
-            monster.GetComponent<Material>().mainTexture = succubusHappy;
+            monsterMaterial.mainTexture = Happy;
         }
     }
 
@@ -70,7 +73,7 @@ public class Player : MonoBehaviour
         currentLove -= 1;
         if(monster == GameObject.Find("Succubus"))
         {
-            monster.GetComponent<Material>().mainTexture = succubusMeh;
+            monsterMaterial.mainTexture = Angry;
         }
         loveMeter.SetLoveMeter(currentLove);
     }
