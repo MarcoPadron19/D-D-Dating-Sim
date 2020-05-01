@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
 
     public void LoveScreen()
     {
-        if (currentLove >= 0)
+        if (currentLove >= maxLoveMeter)
         {
             if (monster == GameObject.Find("Succubus"))
             {
