@@ -67,20 +67,53 @@ public class Player : MonoBehaviour
             monsterMaterial.mainTexture = Happy;
         }
     }
+    public void LoveMeterIncreaseTwo()
+    {
+        currentLove += 2;
+
+
+        loveMeter.SetLoveMeter(currentLove);
+
+        if (currentLove >= maxLoveMeter)
+        {
+            if (monster == GameObject.Find("Succubus"))
+            {
+                SceneManager.LoadScene("Succubus_Love_Interest");
+            }
+
+            if (monster == GameObject.Find("Beholder"))
+            {
+                SceneManager.LoadScene("Beholder_Love_Interest");
+            }
+
+            if (monster == GameObject.Find("Mindflayer"))
+            {
+                SceneManager.LoadScene("Mindflayer_Love_Interest");
+            }
+        }
+        
+            monsterMaterial.mainTexture = Flattered;
+        
+    }
 
     public void LoveMeterDecrease()
     {
         currentLove -= 1;
-        if(monster == GameObject.Find("Succubus"))
-        {
-            monsterMaterial.mainTexture = Angry;
-        }
+        monsterMaterial.mainTexture = Meh;
+        loveMeter.SetLoveMeter(currentLove);
+    }
+
+    public void LoveMeterDecreaseTwo()
+    {
+        currentLove -= 2;
+        monsterMaterial.mainTexture = Angry;
         loveMeter.SetLoveMeter(currentLove);
     }
 
     public void LoveMeterNull()
     {
         currentLove += 0;
+        monsterMaterial.mainTexture = Neutral;
 
         loveMeter.SetLoveMeter(currentLove);
     }
