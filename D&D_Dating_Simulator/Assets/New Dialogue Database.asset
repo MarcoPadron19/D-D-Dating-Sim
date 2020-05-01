@@ -13999,7 +13999,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1324.9314
-        y: 504.81342
+        y: 507.24286
         width: 160
         height: 30
     - id: 31
@@ -16890,7 +16890,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SendMessage(LoveMeterIncreaseTwo)
+        value: 'SendMessage(LoveMeterIncreaseTwo);
+
+          SendMessage(LoveScreen)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -17026,7 +17028,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SendMessage(LoveMeterIncrease)
+        value: 'SendMessage(LoveMeterIncrease);
+
+          SendMessage(LoveScreen)'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -17193,7 +17197,7 @@ MonoBehaviour:
     - id: 75
       fields:
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Pictures
@@ -17217,7 +17221,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Choose your next works carefully.
+        value: Choose your next words carefully.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -17310,7 +17314,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: SendMessage(LoveScreen)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 3
@@ -17539,8 +17543,8 @@ MonoBehaviour:
         y: 1391.4459
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 408.2809}
-    canvasZoom: 0.33931923
+    canvasScrollPosition: {x: 277.69427, y: 664.0316}
+    canvasZoom: 0.3605534
   syncInfo:
     syncActors: 0
     syncItems: 0
